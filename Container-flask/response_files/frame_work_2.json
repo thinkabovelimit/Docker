@@ -1,0 +1,73 @@
+ {
+  "component_types": [
+    {
+      "component_type_code": "fn",
+      "component_type_name": "Function",
+      "component_type_description": "Sample description of the component",
+      "level": 1,
+      "score_rating": [
+        {
+          "min": 0,
+          "max": 0.3,
+          "expr": "weak"
+        }
+      ]
+    }
+  ],
+  "framework_id": 2,
+  "framework_code": "nist",
+  "framework_name": "NIST",
+  "number_of _levels": 4,
+  "components": [
+    {
+      "component_code": "id",
+      "component_name": "Identify",
+      "component_type_code": "fn",
+      "component_type": "Function",
+      "weightage": 1,
+      "level": 1,
+      "components": [
+        {
+          "component_code": "id.am",
+          "component_name": "ID.AM",
+          "component_type_code": "cat",
+          "component_type": "Category",
+          "weightage": 1,
+          "level": 2,
+          "components": [
+            {
+              "component_code": "id.am-1",
+              "component_name": "ID.AM-1",
+              "component_type_code": "sub-cat",
+              "component_type": "Sub Category",
+              "weightage": 1,
+              "level": 3,
+              "components": [
+                {
+                  "component_code": "cm-8",
+                  "component_name": "CM-8",
+                  "component_type_code": "control",
+                  "component_type": "Control",
+                  "weightage": 1,
+                  "level": 4,
+                  "score": 0.7,
+                  "ceis": [
+                    "CEI4_1"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cei_score_expression": [
+    {
+      "internal_control_category": "Preventive",
+      "min": 0,
+      "max": 0.59,
+      "expr": 0
+    }
+  ]
+}
